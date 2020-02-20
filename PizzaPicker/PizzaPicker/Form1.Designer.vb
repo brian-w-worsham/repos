@@ -27,6 +27,10 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.LstPizza = New System.Windows.Forms.ListBox()
         Me.ButtonClear = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
+        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
+        Me.ButtonShow = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CheckBox1
@@ -71,16 +75,60 @@ Partial Class Form1
         '
         Me.ButtonClear.Location = New System.Drawing.Point(59, 294)
         Me.ButtonClear.Name = "ButtonClear"
-        Me.ButtonClear.Size = New System.Drawing.Size(118, 28)
+        Me.ButtonClear.Size = New System.Drawing.Size(118, 32)
         Me.ButtonClear.TabIndex = 4
         Me.ButtonClear.Text = "Clear"
         Me.ButtonClear.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(59, 63)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(86, 20)
+        Me.Label2.TabIndex = 5
+        Me.Label2.Text = "Pizza Style"
+        '
+        'RadioButton1
+        '
+        Me.RadioButton1.AutoSize = True
+        Me.RadioButton1.Checked = True
+        Me.RadioButton1.Location = New System.Drawing.Point(208, 58)
+        Me.RadioButton1.Name = "RadioButton1"
+        Me.RadioButton1.Size = New System.Drawing.Size(109, 24)
+        Me.RadioButton1.TabIndex = 6
+        Me.RadioButton1.TabStop = True
+        Me.RadioButton1.Text = "Deep Dish"
+        Me.RadioButton1.UseVisualStyleBackColor = True
+        '
+        'RadioButton2
+        '
+        Me.RadioButton2.AutoSize = True
+        Me.RadioButton2.Location = New System.Drawing.Point(324, 58)
+        Me.RadioButton2.Name = "RadioButton2"
+        Me.RadioButton2.Size = New System.Drawing.Size(97, 24)
+        Me.RadioButton2.TabIndex = 7
+        Me.RadioButton2.Text = "Gourmet"
+        Me.RadioButton2.UseVisualStyleBackColor = True
+        '
+        'ButtonShow
+        '
+        Me.ButtonShow.Location = New System.Drawing.Point(208, 294)
+        Me.ButtonShow.Name = "ButtonShow"
+        Me.ButtonShow.Size = New System.Drawing.Size(496, 32)
+        Me.ButtonShow.TabIndex = 8
+        Me.ButtonShow.Text = "Show Selection"
+        Me.ButtonShow.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ButtonShow)
+        Me.Controls.Add(Me.RadioButton2)
+        Me.Controls.Add(Me.RadioButton1)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.ButtonClear)
         Me.Controls.Add(Me.LstPizza)
         Me.Controls.Add(Me.Label1)
@@ -98,4 +146,8 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents LstPizza As ListBox
     Friend WithEvents ButtonClear As Button
+    Friend WithEvents Label2 As Label
+    Friend WithEvents RadioButton1 As RadioButton
+    Friend WithEvents RadioButton2 As RadioButton
+    Friend WithEvents ButtonShow As Button
 End Class
